@@ -20,7 +20,7 @@ export default {
       if (this.newText) {
         let value = this.newText;
         // console.log(value);
-        this.$emit("addTodo", value)
+        this.$emit("addTodo", value);
         this.newText = "";
       }
     },
@@ -29,9 +29,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-form { display: flex; height: 43px;
-    input { flex: 1; padding-left: 1em; background: #555;
-      color: #fff; }
-    button { width: 56px; font-size:20px; background:#ddd }
+form {
+  display: flex;
+  height: 43px;
+  input {
+    flex: 1;
+    padding-left: 1em;
+    background: #555;
+    color: #fff;
+  }
+  button {
+    width: 56px;
+    font-size: 20px;
+    background: #ddd;
+  }
 }
 </style>
